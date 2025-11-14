@@ -148,7 +148,7 @@ def train(args):
     optimizerG = torch.optim.Adam(G.parameters(), lr=args.lr, betas=(0.5, 0.999))
     optimizerD = torch.optim.Adam(D.parameters(), lr=args.lr, betas=(0.5, 0.999))
 
-    os.makedirs("generated", exist_ok=True)
+    os.makedirs("generated_gan", exist_ok=True)
 
     # resume if requested
     start_epoch = 0
