@@ -1,0 +1,19 @@
+# Ignore all files in data folder but keep the folder
+data/*
+!data/.gitkeep
+
+# Ignore model checkpoint files
+*.pt
+*.pth
+
+# Python cache
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated outputs
+generated/
