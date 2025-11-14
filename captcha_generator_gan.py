@@ -202,7 +202,7 @@ def train(args):
         with torch.no_grad():
             img = G(sample_noise, sample_label)
 
-        vutils.save_image(img, f"generated/sample_{epoch+1:03d}.png", normalize=True)
+        vutils.save_image(img, f"generated_gan/sample_{epoch+1:03d}.png", normalize=True)
 
         # save checkpoint
         save_ckpt(epoch + 1, G, D, optimizerG, optimizerD)
